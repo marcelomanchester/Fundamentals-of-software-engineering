@@ -1,0 +1,19 @@
+{
+  "name": "cloudassisntent",
+  "version": "1.0.0",
+  "description": "Assistent bot on Telegram to help developers to manage your's applications in Cloud.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "/Fundamentals-of-software-engineering"
+  },
+  "author": "Marcelo Manchester",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
