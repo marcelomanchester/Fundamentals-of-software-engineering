@@ -34,6 +34,25 @@ module.exports = {
         }
 
         return JSON.stringify(json)
+    },
+
+    updateVersionBody: function (name, image, version) {
+        json = {
+            "spec": {
+                "template": {
+                    "spec": {
+                        "containers": [
+                            {
+                                "name": name,
+                                "image": `${image}:${version}`
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+
+        return JSON.stringify(json)
     }
 
 }

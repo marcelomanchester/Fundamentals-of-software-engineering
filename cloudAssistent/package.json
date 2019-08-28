@@ -4,6 +4,7 @@
   "description": "Assistent bot on Telegram to help developers to manage your's applications in Cloud.",
   "main": "index.js",
   "scripts": {
+    "production": "pm2-runtime start index.js",
     "test": "npm test",
     "dev": "nodemon"
   },

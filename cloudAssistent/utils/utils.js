@@ -8,7 +8,7 @@ function createRequestWithAuthorization(host, api, port, method, auth = false) {
         "method": method,
         "headers": {
             // "X-CSRF-Token": "cDJnrIwuz1VIeq1_cBLmJf1bBBo:1516058286181",
-            'Content-Type': 'application/json',
+            'Content-Type': (method == "PATCH") ? 'application/strategic-merge-patch+json':'application/json',
             "Authorization": auth
             
         }
